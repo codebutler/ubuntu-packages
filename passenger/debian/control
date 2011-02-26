@@ -5,7 +5,7 @@ Maintainer: John Leach <john@brightbox.co.uk>
 Build-Depends: apache2-threaded-dev, apache2-mpm-worker | apache2-mpm-prefork,
  libapr1-dev, ruby1.9.1, debhelper (>= 5.0.44), ruby1.9.1-dev, doxygen,
  asciidoc (>= 8.2), graphviz, rake, cdbs, source-highlight, libev-dev,
- libcurl4-openssl-dev
+ libcurl4-openssl-dev, autotools-dev
 Standards-Version: 3.8.0
 Homepage: http://www.modrails.com/
 XS-Vcs-git: git://github.com/johnl/deb-passenger/tree/master
@@ -17,7 +17,7 @@ Depends: ${shlibs:Depends}, ruby1.9.1, librack-ruby1.9.1
 Conflicts: libapache2-mod-passenger (< 2.2.1-1bbox1)
 Suggests: python, rails, passenger-doc
 Description: Rails and Rack support for Apache2
- Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ Phusion Passenger a.k.a. mod_rails or mod_rack makes
  deployment of Ruby web applications, such as those built on the
  revolutionary Ruby on Rails web framework, a breeze.
  .
@@ -30,7 +30,7 @@ Depends: ${shlibs:Depends}, apache2.2-common,
  passenger-common (= ${binary:Version})
 Suggests: python, rails, passenger-doc, ruby1.9.1
 Description: Rails and Rack support for Apache2
- Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ Phusion Passenger a.k.a. mod_rails or mod_rack makes
  deployment of Ruby web applications, such as those built on the
  revolutionary Ruby on Rails web framework, a breeze.
  .
@@ -41,7 +41,7 @@ Section: doc
 Architecture: all
 Suggests: www-browse
 Description: Rails and Rac support for Apache2 - Documentation
- Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ Phusion Passenger a.k.a. mod_rails or mod_rack makes
  deployment of Ruby web applications, such as those built on the
  revolutionary Ruby on Rails web framework, a breeze.
  .
