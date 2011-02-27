@@ -1,0 +1,10 @@
+This is an experiment in making debian packaging easier. 
+
+So far it has not been successful.
+
+Other attempts:
+http://projects.tryphon.eu/rake-debian-build
+http://pallet.rubyforge.org/
+https://github.com/orionz/gaffer
+https://github.com/matth/debra
+https://github.com/nighto/make-simple-debian-package

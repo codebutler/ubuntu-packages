@@ -1,0 +1,5 @@
+objs/nginx usr/sbin
+debian/conf/* etc/nginx
+debian/NEWS.Debian usr/share/doc/nginx
+debian/passenger.conf etc/nginx/conf.d
+passenger-*/agents/nginx/PassengerHelperAgent usr/lib/phusion_passenger/ext/nginx

@@ -1,0 +1,11 @@
+{
+  "version": "3.0.3-0~codebutler0",
+  "dists":   [ "maverick" ],
+  "sources": [
+    {
+      "type": "http",
+      "url":  "http://rubyforge.org/frs/download.php/74326/passenger-3.0.3.tar.gz"
+    }
+  ],
+  "upload": "ppa:codebutler/rails"
+}
