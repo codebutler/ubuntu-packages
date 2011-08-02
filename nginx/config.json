@@ -1,15 +1,15 @@
 {
-  "version": "0.8.54-passenger3.0.3-0codebutler2",
+  "version": "0.8.55-passenger3.0.7-0codebutler1",
   "dists":   [ "maverick" ],
   "sources": [
     {
       "type": "http",
-      "url":  "http://nginx.org/download/nginx-0.8.54.tar.gz"
+      "url":  "http://nginx.org/download/nginx-0.8.55.tar.gz"
     },
     {
       "type": "http",
-      "url":  "http://rubyforge.org/frs/download.php/74326/passenger-3.0.3.tar.gz",
-      "extract_to": "./nginx-0.8.54/"
+      "url":  "http://rubyforge.org/frs/download.php/74656/passenger-3.0.7.tar.gz",
+      "extract_to": "./nginx-0.8.55/"
     }
   ],
   "upload": "ppa:codebutler/rails"

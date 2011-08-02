@@ -21,7 +21,10 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 		cp -f /usr/share/misc/config.guess config.guess
 endif
+	echo HACK HACK HACK
+	chmod -v a+x $$PWD/debian/bin/*
 	PATH=$$PWD/debian/bin:$$PATH && echo $$PATH
+	PATH=$$PWD/debian/bin:$$PATH && ls -l
 	PATH=$$PWD/debian/bin:$$PATH && ruby --version
 
 	PATH=$$PWD/debian/bin:$$PATH && ./configure --conf-path=/etc/nginx/nginx.conf \
@@ -50,7 +53,7 @@ endif
 	    --with-md5=/usr/include/openssl \
 	    --with-mail \
 	    --with-mail_ssl_module \
-            --add-module=$(CURDIR)/passenger-3.0.3/ext/nginx/ \
+            --add-module=$(CURDIR)/passenger-3.0.7/ext/nginx/ \
             $(CONFIGURE_OPTS)
 
 build: config.status

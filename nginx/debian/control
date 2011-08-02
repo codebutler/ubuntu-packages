@@ -14,8 +14,7 @@ Build-Depends: debhelper (>= 7),
                libcurl4-openssl-dev,
                ruby1.9.1,
                ruby1.9.1-dev,
-               rubygems1.9.1,
-               rake
+               rubygems1.9.1
 Standards-Version: 3.9.1
 Homepage: http://nginx.net
 Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/nginx/trunk
