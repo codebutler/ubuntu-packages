@@ -39,7 +39,7 @@ def build(package)
     config['sources'].each do |source|
       source_type = source['type']
       case source_type
-      when 'http':
+      when 'http' then
         source_url = source['url']
 
         uri       = URI::parse(source_url)
@@ -61,7 +61,7 @@ def build(package)
       
         extract_dir = File.expand_path(Dir[File.join(package_dir, '*')].find { |f| File.directory?(f) })
     
-      when 'git':
+      when 'git' then
         source_url = source['url']
         extract_dir = File.join(package_dir, package)
         run_command("git clone #{source_url} #{extract_dir}")
